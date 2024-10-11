@@ -5,14 +5,34 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [
+        "build/**",
+        ".vercel/**",
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "test": {},
+    "coverage": {
+      "outputs": ["coverage/**"]
+    },
+    "e2e": {
+      "outputs": ["test-results/**"],
+      "env": ["PLAYWRIGHT_BROWSERS_PATH"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
