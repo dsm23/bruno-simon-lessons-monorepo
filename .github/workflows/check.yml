@@ -1,0 +1,56 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  HUSKY: 0
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Restore Lint Cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .turbo/cache
+            node_modules/.cache
+            .eslintmdcache
+            .stylelintcache
+            .prettiercache
+          # We want to restore Turborepo Cache and ESlint and Prettier Cache
+          # The ESLint and Prettier cache's are useful to reduce the overall runtime of ESLint and Prettier
+          # as they will only run on files that have changed since the last cached run
+          # this might of course lead to certain files not being checked against the linter, but the chances
+          # of such situation from happening are very slim as the checksums of both files would need to match
+          key: cache-lint-${{ hashFiles('pnpm-lock.yaml') }}-
+          restore-keys: |
+            cache-lint-${{ hashFiles('pnpm-lock.yaml') }}-
+            cache-lint-
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          # We want to ensure that the Node.js version running here respects our supported versions
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Format check
+        run: pnpm fmt.check
