@@ -27,6 +27,10 @@ out/
 build
 dist
 
+# cache files
+.eslintmdcache
+.stylelintcache
+.prettiercache
 
 # Debug
 npm-debug.log*

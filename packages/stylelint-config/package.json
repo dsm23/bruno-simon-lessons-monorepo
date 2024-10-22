@@ -1,0 +1,16 @@
+{
+  "name": "@repo/stylelint-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-selector-bem-pattern": "^4.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

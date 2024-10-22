@@ -6,6 +6,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "lint:css": "turbo lint:css",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check ."
   },
