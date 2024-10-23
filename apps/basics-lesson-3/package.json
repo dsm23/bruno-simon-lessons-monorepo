@@ -8,7 +8,7 @@
     "clean": "rm -rf dist",
     "dev": "vite --host 0.0.0.0 --clearScreen false",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src/",
+    "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache"
   },
   "dependencies": {

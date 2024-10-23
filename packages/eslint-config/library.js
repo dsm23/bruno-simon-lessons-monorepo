@@ -1,34 +1,46 @@
-const { resolve } = require("node:path");
+import { resolve } from "node:path";
+import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
+import prettier from "eslint-config-prettier";
+import onlyWarn from "eslint-plugin-only-warn";
+import react from "eslint-plugin-react";
+import ts from "typescript-eslint";
 
 const project = resolve(process.cwd(), "tsconfig.json");
 
+const compat = new FlatCompat();
+
+const compatConfig = compat.config({
+  extends: ["plugin:@next/eslint-plugin-next/core-web-vitals", "turbo"],
+});
+
 /** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: ["eslint:recommended", "prettier", "turbo"],
-  plugins: ["only-warn"],
-  globals: {
-    React: true,
-    JSX: true,
+export default ts.config(
+  {
+    ignores: [".*.js", "node_modules/", "dist/"],
   },
-  env: {
-    node: true,
+  js.configs.recommended,
+  ...ts.configs.recommended,
+  react.configs.flat["jsx-runtime"],
+  prettier,
+  ...compatConfig,
+  {
+    plugins: {
+      "only-warn": onlyWarn,
+    },
   },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
+  {
+    rules: {
+      "@next/next/no-duplicate-head": "off",
+    },
+  },
+  {
+    settings: {
+      "import/resolver": {
+        typescript: {
+          project,
+        },
       },
     },
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-    "dist/",
-  ],
-  overrides: [
-    {
-      files: ["*.js?(x)", "*.ts?(x)"],
-    },
-  ],
-};
+);
