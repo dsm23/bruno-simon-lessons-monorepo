@@ -1,5 +1,5 @@
 {
-  "name": "basics-lesson-5",
+  "name": "basics-lesson-6",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,7 +13,6 @@
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache"
   },
   "dependencies": {
-    "gsap": "^3.12.5",
     "three": "0.169.0"
   },
   "devDependencies": {
