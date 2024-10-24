@@ -5,6 +5,7 @@
     "prepare": "node .husky/install.mjs",
     "build": "turbo build",
     "dev": "turbo dev",
+    "e2e": "turbo e2e",
     "lint": "turbo lint",
     "lint:css": "turbo lint:css",
     "fmt": "prettier --write .",

@@ -41,3 +41,9 @@ yarn-error.log*
 .DS_Store
 *.pem
 .vscode/settings.json
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
