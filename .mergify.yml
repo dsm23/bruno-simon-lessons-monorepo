@@ -9,8 +9,8 @@ pull_request_rules:
       - check-success~=codeql \([a-z]*\)
       - check-success=dependency-review
       - check-success=gitleaks
-      # - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=5"
+      - check-success~=playwright-tests \(\d, \d\)
+      - "#check-success>=14"
     actions:
       review:
         type: APPROVE
@@ -24,8 +24,8 @@ pull_request_rules:
       - check-success~=codeql \([a-z]*\)
       - check-success=dependency-review
       - check-success=gitleaks
-      # - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=5"
+      - check-success~=playwright-tests \(\d, \d\)
+      - "#check-success>=14"
     actions:
       review:
         type: APPROVE
@@ -39,8 +39,8 @@ pull_request_rules:
       - check-success~=codeql \([a-z]*\)
       - check-success=dependency-review
       - check-success=gitleaks
-      # - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=5"
+      - check-success~=playwright-tests \(\d, \d\)
+      - "#check-success>=14"
       - "#approved-reviews-by>=1"
     actions:
       merge:
