@@ -1,3 +1,5 @@
+import type { Config } from "stylelint";
+
 // These are all the custom `@` (at) rules that we use within our custom PostCSS plugins
 const CUSTOM_AT_RULES = [
   // Tailwind-specific at-rules
@@ -25,7 +27,7 @@ const ONLY_ALLOW_CAMELCASE_SELECTORS = [
   { message: (s) => `Expected '${s}' to be in camelCase` },
 ];
 
-export default {
+const config = {
   extends: ["stylelint-config-standard"],
   plugins: ["stylelint-order", "stylelint-selector-bem-pattern"],
   rules: {
@@ -99,4 +101,6 @@ export default {
       },
     },
   ],
-};
+} satisfies Config;
+
+export default config;
