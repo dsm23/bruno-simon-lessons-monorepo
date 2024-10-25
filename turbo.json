@@ -17,6 +17,7 @@
       "dependsOn": ["^lint"]
     },
     "lint:css": {},
+    "lint:js": {},
     "test": {},
     "coverage": {
       "outputs": ["coverage/**"]
