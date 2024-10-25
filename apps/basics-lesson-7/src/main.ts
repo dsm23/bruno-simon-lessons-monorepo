@@ -27,7 +27,6 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 const handleResize = () => {
-  console.log("test");
   sizes.width = window.innerWidth;
   sizes.height = window.innerHeight;
 
