@@ -1,0 +1,33 @@
+{
+  "name": "basics-lesson-8",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "dev": "vite --host 0.0.0.0 --clearScreen false",
+    "e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
+    "lint": "turbo run lint:js lint:css"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.1",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/playwright-config": "workspace:*",
+    "@repo/stylelint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/vite-config": "workspace:*",
+    "@types/node": "^22.7.9",
+    "@types/three": "0.169.0",
+    "stylelint": "^16.10.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
