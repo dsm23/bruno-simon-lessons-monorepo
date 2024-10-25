@@ -62,6 +62,10 @@ export default tseslint.config(
           prefer: "type-imports",
         },
       ],
+      "@typescript-eslint/no-misused-promises": [
+        "error",
+        { checksVoidReturn: false },
+      ],
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/non-nullable-type-assertion-style": "off",
       "@typescript-eslint/restrict-template-expressions": [

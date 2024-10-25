@@ -13,17 +13,18 @@ const cursor = {
   y: 0,
 };
 
-globalThis.addEventListener("mousemove", (event) => {
+const handleMouseMove = (event: MouseEvent) => {
   cursor.x = event.clientX / sizes.width - 0.5;
   cursor.y = 0.5 - event.clientY / sizes.height;
-});
+};
+
+globalThis.addEventListener("mousemove", handleMouseMove);
 
 const scene = new THREE.Scene();
 
 const geometry = new THREE.BoxGeometry(1, 1, 1, 5, 5, 5);
 const material = new THREE.MeshBasicMaterial({
   color: 0xff0000,
-  wireframe: true,
 });
 const mesh = new THREE.Mesh(geometry, material);
 
