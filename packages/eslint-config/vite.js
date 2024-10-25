@@ -75,6 +75,12 @@ export default tseslint.config(
           allowBoolean: true,
         },
       ],
+      "no-console": [
+        "error",
+        {
+          allow: ["debug", "error", "info", "trace", "warn"],
+        },
+      ],
     },
   },
 );
