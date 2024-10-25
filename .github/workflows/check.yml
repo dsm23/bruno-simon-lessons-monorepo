@@ -22,7 +22,7 @@ jobs:
           egress-policy: audit
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: pnpm/action-setup@v3
         with:
           version: 9
@@ -53,6 +53,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Format check
-        run: pnpm fmt.check
+        run: pnpm run fmt.check
       - name: Lint check
-        run: pnpm lint:css
+        run: pnpm run lint --filter=...[origin/main]
+      - name: build check
+        run: pnpm run build --filter=...[origin/main]

@@ -9,8 +9,9 @@
     "dev": "vite --host 0.0.0.0 --clearScreen false",
     "e2e": "playwright test",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
-    "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache"
+    "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
+    "lint": "turbo run lint:js lint:css"
   },
   "dependencies": {
     "gsap": "^3.12.5",
