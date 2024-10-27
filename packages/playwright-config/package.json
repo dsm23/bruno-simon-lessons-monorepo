@@ -8,9 +8,9 @@
     ".": "./playwright.config.ts"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.1",
+    "@playwright/test": "^1.48.2",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.7.9"
+    "@types/node": "^22.8.1"
   },
   "publishConfig": {
     "access": "public"
