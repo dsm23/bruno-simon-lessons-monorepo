@@ -1,4 +1,5 @@
-import type { Config } from "stylelint";
+// TODO: deal with stylelint internal types
+import type { Config, ConfigRuleSettings, RuleMessages } from "stylelint";
 
 // These are all the custom `@` (at) rules that we use within our custom PostCSS plugins
 const CUSTOM_AT_RULES = [
@@ -16,16 +17,20 @@ const CUSTOM_AT_RULES = [
 
 // Enforces certain selectors to be only in kebab-case notation
 // We use these for id selectors and classname selectors
-const ONLY_ALLOW_KEBAB_CASE_SELECTORS = [
+const ONLY_ALLOW_KEBAB_CASE_SELECTORS: ConfigRuleSettings<
+  RegExp,
+  RuleMessages
+> = [
   /^(?:[a-z]+(?:-[a-z]+)*)$/,
   { message: (s) => `Expected '${s}' to be in kebab-case` },
 ];
 
 // Enforces certain selectors to be camelCase in module.css files
-const ONLY_ALLOW_CAMELCASE_SELECTORS = [
-  /^[a-z]+([A-Z][a-z]*)*$/,
-  { message: (s) => `Expected '${s}' to be in camelCase` },
-];
+const ONLY_ALLOW_CAMELCASE_SELECTORS: ConfigRuleSettings<RegExp, RuleMessages> =
+  [
+    /^[a-z]+([A-Z][a-z]*)*$/,
+    { message: (s) => `Expected '${s}' to be in camelCase` },
+  ];
 
 const config = {
   extends: ["stylelint-config-standard"],
