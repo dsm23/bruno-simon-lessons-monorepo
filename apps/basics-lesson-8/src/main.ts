@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
-import "./index.css";
+import "~/index.css";
 
 const sizes = {
   width: window.innerWidth,

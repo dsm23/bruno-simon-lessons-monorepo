@@ -3,7 +3,7 @@ import GUI from "lil-gui";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
-import "./index.css";
+import "~/index.css";
 
 type DebugObj = {
   color: THREE.ColorRepresentation;

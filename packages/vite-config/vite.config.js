@@ -1,3 +1,4 @@
+import path from "node:path";
 import restart from "vite-plugin-restart";
 
 /** @type {import("vite").UserConfig} */
@@ -12,6 +13,11 @@ const config = {
   plugins: [
     restart({ restart: ["./public/**"] }), // Restart server on static file change
   ],
+  resolve: {
+    alias: {
+      "~": path.resolve(process.cwd(), "./src"),
+    },
+  },
 };
 
 export default config;
