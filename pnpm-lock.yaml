@@ -45,368 +45,6 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
 
-  apps/basics-lesson-10:
-    dependencies:
-      '@repo/static-assets':
-        specifier: workspace:*
-        version: link:../../packages/static-assets
-      gsap:
-        specifier: ^3.12.5
-        version: 3.12.5
-      lil-gui:
-        specifier: ^0.19.2
-        version: 0.19.2
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-3:
-    dependencies:
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-4:
-    dependencies:
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-5:
-    dependencies:
-      gsap:
-        specifier: ^3.12.5
-        version: 3.12.5
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-6:
-    dependencies:
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-7:
-    dependencies:
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-8:
-    dependencies:
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
-  apps/basics-lesson-9:
-    dependencies:
-      gsap:
-        specifier: ^3.12.5
-        version: 3.12.5
-      lil-gui:
-        specifier: ^0.19.2
-        version: 0.19.2
-      three:
-        specifier: 0.169.0
-        version: 0.169.0
-    devDependencies:
-      '@axe-core/playwright':
-        specifier: ^4.10.0
-        version: 4.10.0(playwright-core@1.48.2)
-      '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/playwright-config':
-        specifier: workspace:*
-        version: link:../../packages/playwright-config
-      '@repo/stylelint-config':
-        specifier: workspace:*
-        version: link:../../packages/stylelint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@repo/vite-config':
-        specifier: workspace:*
-        version: link:../../packages/vite-config
-      '@types/node':
-        specifier: ^22.8.1
-        version: 22.8.1
-      '@types/three':
-        specifier: 0.169.0
-        version: 0.169.0
-      stylelint:
-        specifier: ^16.10.0
-        version: 16.10.0(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.10(@types/node@22.8.1)
-
   apps/docs:
     dependencies:
       '@repo/ui':
@@ -486,6 +124,368 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
+
+  basics/lesson-10:
+    dependencies:
+      '@repo/static-assets':
+        specifier: workspace:*
+        version: link:../../packages/static-assets
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
+      lil-gui:
+        specifier: ^0.19.2
+        version: 0.19.2
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-3:
+    dependencies:
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-4:
+    dependencies:
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-5:
+    dependencies:
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-6:
+    dependencies:
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-7:
+    dependencies:
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-8:
+    dependencies:
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
+
+  basics/lesson-9:
+    dependencies:
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
+      lil-gui:
+        specifier: ^0.19.2
+        version: 0.19.2
+      three:
+        specifier: 0.169.0
+        version: 0.169.0
+    devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.0
+        version: 4.10.0(playwright-core@1.48.2)
+      '@playwright/test':
+        specifier: ^1.48.2
+        version: 1.48.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/playwright-config':
+        specifier: workspace:*
+        version: link:../../packages/playwright-config
+      '@repo/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
+      '@types/node':
+        specifier: ^22.8.1
+        version: 22.8.1
+      '@types/three':
+        specifier: 0.169.0
+        version: 0.169.0
+      stylelint:
+        specifier: ^16.10.0
+        version: 16.10.0(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.8.1)
 
   packages/eslint-config:
     dependencies:
