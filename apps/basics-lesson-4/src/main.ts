@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-import "./index.css";
+import "~/index.css";
 
 const scene = new THREE.Scene();
 
