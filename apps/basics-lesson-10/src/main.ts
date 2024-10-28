@@ -1,8 +1,8 @@
+import imgColors from "@repo/static-assets/textures/door/color.jpg";
 import gsap from "gsap";
 import GUI from "lil-gui";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
-import imgColors from "~/assets/textures/door/color.jpg";
 
 import "~/index.css";
 

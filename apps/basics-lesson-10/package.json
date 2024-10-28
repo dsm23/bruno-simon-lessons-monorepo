@@ -14,6 +14,7 @@
     "lint": "turbo run lint:js lint:css"
   },
   "dependencies": {
+    "@repo/static-assets": "workspace:*",
     "gsap": "^3.12.5",
     "lil-gui": "^0.19.2",
     "three": "0.169.0"
