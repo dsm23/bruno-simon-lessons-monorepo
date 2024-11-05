@@ -10,6 +10,7 @@
     "vite.js"
   ],
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
     "@vercel/style-guide": "^6.0.0",
