@@ -40,14 +40,14 @@ main {
   height: 100dvh;
 }
 
-canvas {
+.canvas {
   max-width: 100%;
   animation: fade-in 1s ease 0.3s forwards;
   cursor: grab;
   touch-action: none;
 }
 
-canvas:active {
+.canvas:active {
   cursor: grabbing;
 }
 

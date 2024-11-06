@@ -11,12 +11,10 @@ const App = () => (
   <main>
     <h1 className="sr-only">Bruno room</h1>
     <Canvas
+      className="canvas"
       flat
       dpr={[1, 2]}
       camera={{ fov: 25, position: [0, 0, 8] }}
-      style={{
-        touchAction: "none",
-      }}
     >
       <color attach="background" args={["#e0b7ff"]} />
       <ambientLight />
