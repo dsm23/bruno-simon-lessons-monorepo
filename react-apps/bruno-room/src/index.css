@@ -35,10 +35,13 @@ body {
   }
 }
 
+main {
+  display: grid;
+  height: 100dvh;
+}
+
 canvas {
-  display: block;
   max-width: 100%;
-  min-height: 100dvh;
   animation: fade-in 1s ease 0.3s forwards;
   cursor: grab;
   touch-action: none;

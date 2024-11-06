@@ -9,7 +9,7 @@ import Sudo from "./components/Sudo";
 
 const App = () => (
   <main>
-    <h1 className="sr-only">Bruno's room</h1>
+    <h1 className="sr-only">Bruno room</h1>
     <Canvas
       flat
       dpr={[1, 2]}

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "e2e": "playwright test",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint": "turbo run lint:js lint:css",
@@ -21,7 +22,9 @@
     "three-stdlib": "^2.34.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.48.2",
     "@repo/eslint-config": "workspace:*",
+    "@repo/playwright-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
