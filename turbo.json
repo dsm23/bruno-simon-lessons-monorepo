@@ -13,11 +13,12 @@
         "!.next/cache/**"
       ]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
+    "lint": {},
     "lint:css": {},
     "lint:js": {},
+    "lint:lint-staged": {
+      "dependsOn": ["^lint"]
+    },
     "test": {},
     "coverage": {
       "outputs": ["coverage/**"]
