@@ -9,7 +9,7 @@
     "e2e": "playwright test",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
-    "lint": "turbo run lint:js lint:css",
+    "lint": "run-s lint:js lint:css",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "@types/three": "0.169.0",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "globals": "^15.11.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.12.2",
     "vite": "^5.4.10"

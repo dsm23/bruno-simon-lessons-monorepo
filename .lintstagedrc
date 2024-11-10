@@ -1,5 +1,8 @@
 {
-  "**/*.{js,mjs,ts,tsx,md,mdx}": ["turbo run lint --", "prettier --check"],
+  "**/*.{js,mjs,ts,tsx,md,mdx}": [
+    "turbo run lint:lint-staged --",
+    "prettier --check"
+  ],
   "**/*.css": ["stylelint --allow-empty-input", "prettier --check"],
   "**/*.{json,yml}": ["prettier --check"]
 }
