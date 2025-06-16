@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
-    "lint": "run-s lint:js lint:css"
+    "lint": "run-p lint:js lint:css"
   },
   "dependencies": {
     "three": "0.170.0"
