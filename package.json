@@ -11,16 +11,16 @@
     "fmt.check": "prettier --check ."
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
-    "@commitlint/types": "^19.5.0",
-    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.2.5",
-    "prettier-plugin-css-order": "^2.1.2",
-    "turbo": "^2.3.1",
-    "typescript": "^5.7.2"
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
+    "@commitlint/types": "19.5.0",
+    "@ianvs/prettier-plugin-sort-imports": "4.4.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.2.10",
+    "prettier": "3.2.5",
+    "prettier-plugin-css-order": "2.1.2",
+    "turbo": "2.3.1",
+    "typescript": "5.7.2"
   },
   "packageManager": "pnpm@9.13.0",
   "engines": {
